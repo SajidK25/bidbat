@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": " src/routes/index.js",
-    "build": "sass src/scss:dist/css",
+    "build": "sass --watch src/scss:dist/css",
     "transpile": "babel src -d dist",
     "format": "prettier --write \"src/**/*.js\" ",
     "watch": "sass --watch src/scss:dist/css & live-server",
