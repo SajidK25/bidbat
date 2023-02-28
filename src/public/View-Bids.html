@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="View the current bids on items up for auction on BidBay. Find great deals and place your own bids to win! Stay up-to-date with the latest bidding activity on BidBay.">
+
+  <link rel="stylesheet" href="/dist/css/ViewBids.css">
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>View Bids Page | BidBay</title>
+
+
+
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+  </div>
+
+  <main>
+    <!----- View Bids  SECTION  ----->
+    <section class="View-bids">
+      <div class="container">
+        <h1 class="text-center text-white fw-bold">View Bids Page:</h1>
+        <table>
+          <thead>
+            <tr>
+              <th class="text-white fw-bolder fs-3">Bidder Name</th>
+              <th class="text-white fw-bolder fs-3">Bid Amount</th>
+              <th class="text-white fw-bolder fs-3">Bid Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-white fw-bold fs-2">John</td>
+              <td class="text-white fs-3">$100</td>
+              <td class="text-white fs-3">2021-08-01</td>
+            </tr>
+            <tr>
+              <td class="text-white fw-bold fs-2">Sara</td>
+              <td class="text-white fs-3">$150</td>
+              <td class="text-white fs-3">2021-08-03</td>
+            </tr>
+            <tr>
+              <td class="text-white fw-bold fs-2">Mike</td>
+              <td class="text-white fs-3">$200</td>
+              <td class="text-white fs-3">2021-08-04</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div> -->
+    </section>
+    <!----- NEWS LETTER SECTION ------>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
+          </div>
+          <div class="content">
+            <h4 class="text-white p-3">
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+            </h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <button type="submit" class="new-home-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!--=========  FOOTER SECTION  ======== -->
+
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../js/authDecision.js" defer></script>
+
+  <script defer src="../js/logout.js"></script>
+  <script defer src="../views/common.js"></script>
+  <script defer src="../js/my-script.js"></script>
+</body>
+
+</html>

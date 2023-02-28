@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Add your favorite items to your BidBay cart and checkout securely. Easily manage your bids and complete your purchases on our platform.">
+
+  <link rel="stylesheet" href="/dist/css/help-page.css">
+
+
+
+  <!--font awesome link-->
+  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+
+  <title>Help Page | BidBay </title>
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+
+  </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
+  <main>
+    <section class="frequently-section">
+      <div class="container">
+        <h1 class="text-white">Help and Support</h1>
+        <div class="accordion" id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  What is BidBay and how does it work?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                BidBay is an online auction website that allows users to buy and sell items in an auction-style format.
+                To
+                use BidBay, you simply need to create an account, find items that you're interested in, and place bids
+                on
+                those items. If you're the highest bidder when the auction ends, you'll win the item. It's a fun and
+                exciting way to shop for unique and hard-to-find items!
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  How do I create an account on BidBay?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                To create an account on BidBay, go to the BidBay homepage and click on the "Sign Up" button. You'll be
+                asked
+                to enter your name, email address, and a password. Once you've provided this information and agreed to
+                BidBay's terms and conditions, you'll be registered and ready to start bidding on items!
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  How do I bid on an item on BidBay?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                To bid on an item on BidBay, you first need to find an item that you're interested in. Once you've found
+                an
+                item, enter the amount that you want to bid in the appropriate field on the item's page. If your bid is
+                the
+                highest when the auction ends, you'll win the item. Keep in mind that there may be a minimum bid
+                requirement, and bids may be subject to time extensions if placed near the end of an auction.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  How do I sell an item on BidBay?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                To sell an item on BidBay, you first need to create a seller account. Once you've created a seller
+                account, you can list your item for sale by providing a description, photos, and other relevant
+                information. You'll also need to set a starting bid and a minimum bid increment. When the auction ends,
+                you'll receive payment from the winning bidder, and you'll be responsible for shipping the item to the
+                buyer. BidBay charges a small fee for each item sold on the platform.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
+                  How does BidBay ensure the safety and security of its users?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                BidBay takes the safety and security of its users very seriously. We use industry-standard encryption to
+                protect your personal and financial information, and we monitor our platform for fraudulent or
+                suspicious activity. We also have a team of experts who review listings and enforce our policies to
+                ensure that all users are acting in good faith. If you ever have any concerns about the safety or
+                security of your BidBay account, please contact our support team for assistance.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
+                  aria-expanded="false" aria-controls="collapseSix">
+                  What payment methods does BidBay accept?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="card-body">
+                BidBay accepts a variety of payment methods, including credit cards, PayPal, and bank transfers. The
+                specific payment methods available to you may depend on your location and other factors. When you win an
+                auction or make a purchase on BidBay, you'll be prompted to select a payment method and provide the
+                necessary information. If you have any questions or concerns about payment on BidBay, please contact our
+                support team for assistance.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--=========  NEWS LETTER SECTION  ======== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
+          </div>
+          <div class="content">
+            <h2 class="text-white p-3">
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+            </h2>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <button type="submit" class="new-home-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+  </main>
+
+
+  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+  <div id="footer"></div>
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!---This js links are fine!  -->
+  <script defer src="/src/views/helper.js"></script>
+  <script defer src="/src/js/authDecision.js"></script>
+  <script defer src="/src/views/bid-amount.js"></script>
+  <script src="/src/views/common.js" defer> </script>
+  <script defer src="/src/js/logout.js"></script>
+
+
+
+</body>
+
+</html>

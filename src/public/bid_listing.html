@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/css/bidListing.css" />
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>Bid on Listing | BidBay</title>
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+  </div>
+
+  <main>
+    <!--========= Create Listing  SECTION   ======== -->
+    <section class="bid-listing">
+      <div class="container mt-5">
+        <h2 class="text-white fw-bold">Bid on Listing</h2>
+        <div class="container">
+          <div class="card">
+            <img id="productImg" class="card-img-bid" src="/assets/img/luxury_watch.jpg" alt="Listing Image" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Luxury Watch - The Ultimate Expression of Refined Taste
+              </h5>
+              <p class="card-text">
+                Luxury Watch is the epitome of elegance and sophistication.
+                Meticulously crafted with the finest materials and attention
+                to detail, this timepiece is a true work of art. Its precise
+                movement ensures accurate timekeeping, while its stunning
+                design makes a statement. Available in a variety of styles and
+                colors, Luxury Watch is the perfect accessory to elevate your
+                style and express your refined taste.
+              </p>
+              <p class="card-text">Current Bid: <span id="bids">100</span></p>
+              <form class="form-group">
+                <label for="amount">Enter Bid Amount:</label>
+                <input type="number" class="form-control" id="amount" />
+                <button type="button" class="btn btn-bid btn-primary" onclick="bitSubmit()">
+                  Submit Bid
+                </button>
+              </form>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=========  NEWS LETTER SECTION  ======== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="" alt="mailbox-img" />
+          </div>
+          <div class="content">
+            <h4 class="text-white p-3">
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management
+              Team
+            </h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input" />
+              <button type="submit" class="cmn--btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--=========  FOOTER SECTION  ======== -->
+
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script defer src="../views/bid-listing.js"></script>
+  <script defer src="../js/logout.js"></script>
+  <script defer src="/src/views/common.js"></script>
+
+  <script defer src="../js/authDecision.js"></script>
+</body>
+
+</html>

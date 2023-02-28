@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="View your BidBay profile and manage your bidding activity on our online auction platform. Buy and sell items with ease. Sign up for a BidBay account today.">
+
+  <link rel="stylesheet" href="/dist/css/profile.css">
+
+
+
+
+
+
+  <!--font awesome link-->
+  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+
+
+  <title>BidBay | Profile</title>
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+
+  </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
+  <main>
+    <section class="pathway-section section dashboard-img section-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="pathway-content">
+              <ul class="bread-link">
+                <li>
+                  <a href="index.html" class="text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <i class="fas fa-angles-right text-white"></i>
+                </li>
+                <li>
+                  <a href="#" class="text-white">My Account</a>
+                </li>
+                <li>
+                  <i class="fas fa-angles-right text-white"></i>
+                </li>
+                <li class="text-white">
+                  Personal Profile
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="pathway-section section section-bg-two">
+      <div class="container">
+        <div class="dashboard-wrapper">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-8">
+              <div class="dashboard-widget">
+                <div class="user-box">
+                  <div class="thumb">
+                    <img src="/assets/img/Winners5.png" alt="user-imc" width="50" height="50">
+                  </div>
+                  <div class="content">
+                    <h5>
+                      <a href="#" class="text-white">
+                        Charlie Smith
+                      </a>
+                    </h5>
+                    <span class="text-white">
+                      Charlie Smith@gmail.com
+                    </span>
+                    <a href="#" class="cmn--border" id="logout-btn">
+                      Logout
+                    </a>
+                  </div>
+                </div>
+                <ul class="dashboard-menu">
+                  <li>
+                    <a href="dashboard.html">
+                      <img src="/assets/img/seo.png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="profile.html">
+                      <img src="/assets/img/user.png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>Personal Profile </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="View-Bids.html">
+                      <img src="/assets/img/auction(1).png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>My Bids</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/assets/img/you-win.png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>Winning Bids</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/assets/img/bell.png" alt=" click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>My Alerts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/assets/img/heart.png" alt=" click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>My Favorites</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-8 mt-lg-5">
+              <div class="dashboard-right-wrapper">
+                <div class="personal-profile-inner">
+                  <div class="profile-items">
+                    <h5 class="text-white fw-bold">
+                      Personal Details
+                    </h5>
+                    <ul class="box-one">
+                      <li class="update">
+                        <a href="#0">
+                          <i class="fas fa-pencil-alt"></i>
+
+                        </a>
+                      </li>
+                      <li>
+                        <span class="dots text-white">Name</span>
+                        <span class="text-white fw-bold">Charlie Smiths</span>
+                      </li>
+                      <li>
+                        <span class="dots text-white">Date of Birth</span>
+                        <span class="text-white">16-04-1982</span>
+                      </li>
+                      <li>
+                        <span class="dots text-white">Address</span>
+                        <span class="text-white">9198 Fieldstone Dr.La Crosse, WI 54601</span>
+                    </ul>
+                  </div>
+                  <div class="profile-items">
+                    <h5 class="text-white">
+                      Account Settings
+                    </h5>
+                    <ul class="box-one">
+                      <li class="update">
+                        <a href="#0">
+                          <i class="fas fa-pencil-alt"></i>
+
+                        </a>
+                      </li>
+                      <li>
+                        <span class="dots text-white">Language</span>
+                        <span class="text-white">English (United States)</span>
+                      </li>
+                      <li>
+                        <span class="dots text-white">Time Zone</span>
+                        <span class="text-white">(GMT-08:00) Central America</span>
+                      </li>
+                      <li>
+                        <span class="dots text-white">Status</span>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="flexCheckDefault1213">
+                          <label class="form-check-label text-white" for="flexCheckDefault1213">
+                            Active
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="profile-items">
+                    <h5 class="text-white">
+                      Email Addresses
+                    </h5>
+                    <div class="profile-update-address">
+                      <span>
+                        Email : Charlie Smith@gmail.com
+                      </span>
+                      <div class="update">
+                        <a href="#0">
+                          <i class="fas fa-pencil-alt"></i>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-items">
+                    <h5 class="text-white fw-bold">
+                      Phone
+                    </h5>
+                    <div class="profile-update-address">
+                      <span class="text-white ">
+                        Phone : +4745540443
+                      </span>
+                      <div class="update">
+                        <a href="#0">
+                          <i class="fas fa-pencil-alt"></i>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-items">
+                    <h5 class="text-white fw-bold">
+                      Security
+                    </h5>
+                    <div class="profile-update-address">
+                      <span class="text-white">
+                        Password : xxxxxxxxxxx
+                      </span>
+                      <div class="update">
+                        <a href="#0">
+                          <i class="fas fa-pencil-alt"></i>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
+  <!--=========  NEWS LETTER SECTION  ======== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-wrapper">
+        <div class="icon-div">
+          <img src="/assets/img/icons867.png" alt="mailbox-img">
+        </div>
+        <div class="content">
+          <h4 class="text-white p-3">
+            Get to Know the Visionaries Behind BidBay: Meet Our Management Team
+          </h4>
+          <form action="#" class="newsletter-form">
+            <input type="email" placeholder="Enter Your Email" class="form-input">
+            <button type="submit" class="new-home-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+  </main>
+
+  <!--=========  FOOTER SECTION  ======== -->
+  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../js/authDecision.js" defer></script>
+
+  <script src="/src/views/common.js" defer> </script>
+</body>
+
+</html>

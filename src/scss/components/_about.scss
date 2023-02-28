@@ -1,0 +1,764 @@
+/* About Section */
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.about-section {
+  margin-top: 5rem;
+  padding: 80px 0;
+  .breadcumnd-content {
+    .text-white {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .bread-link {
+      display: flex;
+      align-items: center;
+      li {
+        color: #fff;
+        font-size: 18px;
+        &:last-of-type {
+          i {
+            margin: 0 10px;
+          }
+        }
+      }
+      a {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  .breadcumnd-thumb img {
+    width: 100%;
+  }
+}
+
+/* About Section Two */
+.about-section-two {
+  background-color: #0a0a0ace;
+  padding: 80px 0;
+  .about-thumb {
+    img {
+      width: 100%;
+    }
+  }
+  .about-content {
+    .section-header {
+      margin-bottom: 40px;
+      h2 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+      }
+    }
+    .fast-support {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        .icon {
+          margin-right: 20px;
+          img {
+            width: 50px;
+          }
+        }
+        .cont {
+          h5 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          p {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Features Section */
+
+.features_section {
+  padding: 80px 0;
+  .card {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    .card-img-top {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card-body {
+      padding: 20px;
+      .badge {
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 10px;
+        &.bg-success {
+          background-color: #28a745;
+          color: #fff;
+        }
+      }
+      .text-danger {
+        font-size: 20px;
+        margin-left: auto;
+      }
+      .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        a {
+          color: #fff;
+          &:hover {
+            color: #28a745;
+          }
+        }
+      }
+    }
+  }
+}
+
+.new-home-btn {
+  background-color: #00c48c;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1px;
+}
+
+.bidding-thumb {
+  text-align: right;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+//CSS for 1124px screen size
+@media only screen and (min-width: 1124px) {
+  .card-img- features {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+//CSS for 900px screen size
+@media only screen and (min-width: 900px) and (max-width: 1123px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+//CSS for 800px screen size
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 140px;
+  }
+}
+
+//CSS for 768px screen size
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 120px;
+  }
+}
+
+//CSS for 600px screen size
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 110px;
+  }
+}
+
+//CSS for 500px screen size
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 100px;
+  }
+}
+
+//CSS for 414px screen size
+@media only screen and (min-width: 414px) and (max-width: 499px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 90px;
+  }
+}
+
+//CSS for 412px screen size
+@media only screen and (min-width: 412px) and (max-width: 413px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 80px;
+  }
+}
+
+//CSS for 390px screen size
+@media only screen and (min-width: 390px) and (max-width: 411px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 70px;
+  }
+}
+
+//CSS for 375px screen size
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 65px;
+  }
+}
+
+//CSS for 360px screen size
+@media only screen and (max-width: 374px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 60px;
+  }
+}
+
+//CSS for small screen sizes
+@media only screen and (max-width: 280px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+section .features_section {
+  padding: 50px 0;
+
+  .card {
+    background-color: #2f2f2f;
+    border: none;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-img-features {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 0;
+
+      .badge {
+        font-size: 0.8rem;
+      }
+      .features_section .card {
+        .badge {
+          font-size: 0.8rem;
+        }
+
+        .card-title {
+          font-size: 1.2rem;
+        }
+
+        .card-body {
+          padding: 15px;
+        }
+
+        .card-img-features {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+// /* About Section */
+
+// body {
+//   overflow-x: hidden;
+//   scroll-behavior: smooth;
+// }
+// .about-section {
+//   margin-top: 5rem;
+//   padding: 80px 0;
+//   .breadcumnd-content {
+//     .text-white {
+//       color: #fff;
+//       font-size: 36px;
+//       margin-bottom: 20px;
+//       font-weight: 600;
+//     }
+//     .bread-link {
+//       display: flex;
+//       align-items: center;
+//       li {
+//         color: #fff;
+//         font-size: 18px;
+//         &:last-of-type {
+//           i {
+//             margin: 0 10px;
+//           }
+//         }
+//       }
+//       a {
+//         color: #fff;
+//         font-size: 18px;
+//       }
+//     }
+//   }
+//   .breadcumnd-thumb img {
+//     width: 100%;
+//   }
+// }
+
+// /* About Section Two */
+// .about-section-two {
+//   background-color: #0a0a0ace;
+//   padding: 80px 0;
+//   .about-thumb {
+//     img {
+//       width: 100%;
+//     }
+//   }
+//   .about-content {
+//     .section-header {
+//       margin-bottom: 40px;
+//       h2 {
+//         color: #fff;
+//         font-size: 36px;
+//         font-weight: 600;
+//       }
+//     }
+//     .fast-support {
+//       li {
+//         display: flex;
+//         align-items: center;
+//         margin-bottom: 30px;
+//         .icon {
+//           margin-right: 20px;
+//           img {
+//             width: 50px;
+//           }
+//         }
+//         .cont {
+//           h5 {
+//             color: #fff;
+//             font-size: 24px;
+//             font-weight: 600;
+//             margin-bottom: 10px;
+//           }
+//           p {
+//             color: #fff;
+//             font-size: 18px;
+//             line-height: 1.8;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// /* Features Section */
+
+// .features_section {
+//   padding: 80px 0;
+//   .card {
+//     background: none;
+//     border: none;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     .card-img-top {
+//       border-top-left-radius: 10px;
+//       border-top-right-radius: 10px;
+//     }
+//     .card-body {
+//       padding: 20px;
+//       .badge {
+//         font-size: 14px;
+//         font-weight: 600;
+//         margin-right: 10px;
+//         &.bg-success {
+//           background-color: #28a745;
+//           color: #fff;
+//         }
+//       }
+//       .text-danger {
+//         font-size: 20px;
+//         margin-left: auto;
+//       }
+//       .card-title {
+//         font-size: 20px;
+//         font-weight: 600;
+//         margin-top: 20px;
+//         a {
+//           color: #fff;
+//           &:hover {
+//             color: #28a745;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .new-home-btn {
+//   background-color: #00c48c;
+//   color: #fff;
+//   padding: 15px 50px;
+//   border-radius: 5px;
+//   font-size: 16px;
+//   font-weight: 700;
+//   text-decoration: none;
+//   display: inline-block;
+//   margin-top: 1px;
+// }
+
+// .bidding-thumb {
+//   text-align: right;
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// }
+
+// //CSS for 1124px screen size
+// @media only screen and (min-width: 1124px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 200px;
+//   }
+// }
+
+// //CSS for 900px screen size
+// @media only screen and (min-width: 900px) and (max-width: 1123px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 150px;
+//   }
+// }
+
+// //CSS for 800px screen size
+// @media only screen and (min-width: 800px) and (max-width: 899px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 140px;
+//   }
+// }
+
+// //CSS for 768px screen size
+// @media only screen and (min-width: 768px) and (max-width: 799px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 120px;
+//   }
+// }
+
+// //CSS for 600px screen size
+// @media only screen and (min-width: 600px) and (max-width: 767px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 110px;
+//   }
+// }
+
+// //CSS for 500px screen size
+// @media only screen and (min-width: 500px) and (max-width: 599px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 100px;
+//   }
+// }
+
+// //CSS for 414px screen size
+// @media only screen and (min-width: 414px) and (max-width: 499px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 90px;
+//   }
+// }
+
+// //CSS for 412px screen size
+// @media only screen and (min-width: 412px) and (max-width: 413px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 80px;
+//   }
+// }
+
+// //CSS for 390px screen size
+// @media only screen and (min-width: 390px) and (max-width: 411px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 70px;
+//   }
+// }
+
+// //CSS for 375px screen size
+// @media only screen and (min-width: 375px) and (max-width: 389px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 65px;
+//   }
+// }
+
+// //CSS for 360px screen size
+// @media only screen and (max-width: 374px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 60px;
+//   }
+// }
+
+// //CSS for small screen sizes
+// @media only screen and (max-width: 280px) {
+//   .card-img-features {
+//     width: 100%;
+//     max-width: 50px;
+//   }
+// }
+
+// section .features_section {
+//   padding: 50px 0;
+
+//   .card {
+//     background-color: #2f2f2f;
+//     border: none;
+//     overflow: hidden;
+//     transition: all 0.4s ease-in-out;
+//     &:hover {
+//       transform: translateY(-5px);
+//       box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.3);
+//     }
+
+//     .card-img-features {
+//       display: block;
+//       margin: 0 auto;
+//       margin-top: 20px;
+//       margin-bottom: 30px;
+//     }
+
+//     .card-body {
+//       text-align: center;
+//       padding: 0;
+
+//       .badge {
+//         font-size: 0.8rem;
+//       }
+
+//       .card-title {
+//         margin-top: 10px;
+//         margin-bottom: 0;
+//         font-size: 1.2rem;
+//         font-weight: 600;
+//         color: #fff;
+
+//         a {
+//           color: #fff;
+//           text-decoration: none;
+
+//           &:hover {
+//             text-decoration: underline;
+//           }
+//         }
+//       }
+
+//       .text-white {
+//         color: #fff !important;
+//       }
+//     }
+//   }
+// }
+
+// // Responsive styles for screens wider than 1124px
+// @media (min-width: 1124px) {
+//   .about-section {
+//     padding: 100px 0;
+//   }
+
+//   .about-section-two {
+//     padding: 100px 0;
+//   }
+
+//   .features_section {
+//     padding: 100px 0;
+//   }
+
+//   .about-content {
+//     padding-left: 50px;
+//   }
+
+//   .about-thumb img {
+//     width: 100%;
+//   }
+// }
+
+// // Responsive styles for screens between 900px and 1123px
+// @media (min-width: 900px) and (max-width: 1123px) {
+//   .about-section {
+//     padding: 80px 0;
+//   }
+
+//   .about-section-two {
+//     padding: 80px 0;
+//   }
+
+//   .features_section {
+//     padding: 80px 0;
+//   }
+
+//   .about-content {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+
+//   .about-thumb img {
+//     width: 100%;
+//   }
+// }
+
+// // Responsive styles for screens between 800px and 899px
+// @media (min-width: 800px) and (max-width: 899px) {
+//   .about-section {
+//     padding: 60px 0;
+//   }
+
+//   .about-section-two {
+//     padding: 60px 0;
+//   }
+
+//   .features_section {
+//     padding: 60px 0;
+//   }
+
+//   .about-content {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+
+//   .about-thumb img {
+//     width: 100%;
+//   }
+
+//   .breadcumnd-thumb img {
+//     height: auto;
+//     max-width: 100%;
+//   }
+// }
+
+// // Responsive styles for screens smaller than 800px
+// @media (max-width: 799px) {
+//   .about-section {
+//     padding: 40px 0;
+//   }
+
+//   .about-section-two {
+//     padding: 40px 0;
+//   }
+
+//   .features_section {
+//     padding: 40px 0;
+//   }
+
+//   .about-content {
+//     padding-left: 10px;
+//     padding-right: 10px;
+//   }
+
+//   .about-thumb img {
+//     width: 100%;
+//   }
+
+//   .breadcumnd-thumb img {
+//     height: auto;
+//     max-width: 100%;
+//   }
+
+//   .fast-support li {
+//     display: block;
+//     margin-bottom: 30px;
+//   }
+// }
+
+// .bread-link {
+//   display: flex;
+//   align-items: center;
+//   font-size: 14px;
+//   color: #333;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+
+//   li {
+//     display: flex;
+//     align-items: center;
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     letter-spacing: 0.05em;
+
+//     &:not(:last-child)::after {
+//       content: '\f101';
+//       font-family: 'Font Awesome 6 Solid';
+//       font-size: 10px;
+//       margin: 0 10px;
+//       color: #333;
+//     }
+
+//     a {
+//       color: #333;
+//       text-decoration: none;
+//     }
+//   }
+
+//   @media screen and (max-width: 810px) {
+//     .about-section .breadcumnd-content .text-white {
+//       margin-top: 6rem;
+//       font-size: 23px;
+//     }
+//     font-size: 12px;
+
+//     li:not(:last-child)::after {
+//       margin: 0 5px;
+//     }
+//   }
+
+//   @media screen and (max-width: 600px) {
+//     font-size: 10px;
+
+//     li:not(:last-child)::after {
+//       margin: 0 3px;
+//     }
+//   }
+// }
+
+// @media (max-width: 412px) {
+//   .about-section .breadcumnd-content .text-white {
+//     margin-top: 6rem;
+//     font-size: 23px;
+//   }
+// }
+
+// @media (max-width: 428px) {
+//   .about-section .breadcumnd-content .text-white {
+//     margin-top: 6rem;
+//     font-size: 23px;
+//   }
+// }

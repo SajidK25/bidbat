@@ -1,0 +1,64 @@
+.registration-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-top: 15rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // height: 100vh;
+  //
+
+  .container {
+    max-width: 800px;
+    max-width: 800px;
+    text-align: center;
+
+    .row {
+      margin-bottom: 2rem;
+
+      .card-registration {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .card-img-top {
+          height: 300px;
+          object-fit: cover;
+        }
+
+        .card-body {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h1 {
+            margin-bottom: 1rem;
+          }
+
+          ul {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
+            li {
+              list-style: disc;
+              margin-left: 1rem;
+            }
+          }
+        }
+
+        .card-footer {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .registration-section {
+      height: calc(100vh - 100px);
+    }
+  }
+}

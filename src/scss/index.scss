@@ -1,0 +1,41 @@
+// Bootstrap variables overrides
+@import 'variables';
+
+// Bootstrap styles
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Original Styles
+@import './components/header';
+
+// @import './components/hero-section';
+@import './components/heroSection';
+
+@import './components/featuresSection';
+
+@import './components/buttons';
+
+@import './components/base';
+
+@import './components/footer';
+
+@import './components/auctions-started-section';
+
+@import './components/get-started_section';
+
+// @import './components/startedSection';
+
+@import './components/upcoming-section';
+
+@import './components/sectionRegister';
+
+@import './components/celebrateSection';
+
+@import './components/carouselControl';
+
+@import './components/newsletterSection';
+
+@import './components/product-cards';
+
+@import './components/btn-container';
+

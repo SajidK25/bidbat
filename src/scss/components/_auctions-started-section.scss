@@ -1,0 +1,85 @@
+// Set image height and width
+.card-img-top {
+ 
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.card{
+  background-color: transparent;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        height: 100%;
+}
+// Hover effect
+.card:hover .card-img-top {
+   background: none;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+// Responsive design
+@media only screen and (max-width: 1124px) {
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card-img-top {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-img-top {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .card-img-top {
+    height: 80px;
+  }
+}

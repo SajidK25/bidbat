@@ -1,0 +1,188 @@
+.features_section {
+  padding: 80px 0;
+  .card {
+   background: none;
+   border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    .card-img-top {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card-body {
+      padding: 20px;
+      .badge {
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 10px;
+        &.bg-success {
+          background-color: #28a745;
+          color: #fff;
+        }
+      }
+      .text-danger {
+        font-size: 20px;
+        margin-left: auto;
+      }
+      .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        a {
+          color: #fff;
+          &:hover {
+            color: #28a745;
+          }
+        }
+      }
+    }
+  }
+}
+
+//CSS for 1124px screen size
+@media only screen and (min-width: 1124px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+//CSS for 900px screen size
+@media only screen and (min-width: 900px) and (max-width: 1123px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+//CSS for 800px screen size
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 140px;
+  }
+}
+
+//CSS for 768px screen size
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 120px;
+  }
+}
+
+//CSS for 600px screen size
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 110px;
+  }
+}
+
+//CSS for 500px screen size
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 100px;
+  }
+}
+
+//CSS for 414px screen size
+@media only screen and (min-width: 414px) and (max-width: 499px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 90px;
+  }
+}
+
+//CSS for 412px screen size
+@media only screen and (min-width: 412px) and (max-width: 413px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 80px;
+  }
+}
+
+//CSS for 390px screen size
+@media only screen and (min-width: 390px) and (max-width: 411px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 70px;
+  }
+}
+
+//CSS for 375px screen size
+@media only screen and (min-width: 375px) and (max-width: 389px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 65px;
+  }
+}
+
+//CSS for 360px screen size
+@media only screen and (max-width: 374px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 60px;
+  }
+}
+
+//CSS for small screen sizes
+@media only screen and (max-width: 280px) {
+  .card-img-features {
+    width: 100%;
+    max-width: 50px;
+  }
+}
+
+section .features_section {
+  padding: 50px 0;
+
+  .card {
+    background-color: #2f2f2f;
+    border: none;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-img-features {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 0;
+
+      .badge {
+        font-size: 0.8rem;
+      }
+
+      .card-title {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .text-white {
+        color: #fff !important;
+      }
+    }
+  }
+}

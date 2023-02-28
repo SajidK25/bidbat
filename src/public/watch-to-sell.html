@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Join BidBay and start selling your items to a global audience. Create your account today and begin your journey towards becoming a successful online seller." ">
+
+
+  <link rel=" stylesheet" href="/dist/css/watchToSell.css">
+
+
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <title> BidBay | Create Account or Sell Items</title>
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> infoBidbay.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+  </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
+
+  <main>
+    <section class="registration-section">
+      <div class="container">
+        <h1 class="text-white">Welcome to sell or Create a bidder account</h1>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-registration h-100">
+              <img class="card-img-top img-fluid" src="/assets/img/bidder-registration.jpg" alt="Bidder Registration">
+              <div class="card-body">
+                <h2>I want to Bid</h2>
+
+                <hr>
+                <p>Bidding on BidBay.com is open to the public. Anyone can bid unless stated otherwise.</p>
+                <p>Valid US or Canadian Credit Card needed to place bid. Credit Card is for the buyers fee. <a href="#"
+                    target="_blank">View Our Fees.</a></p>
+                <p>If you are a government agency and want to bid please register as a seller. </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-primary btn-block btn-lg" href="/account/bidderregister">Create a bidder account</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-registration h-100">
+              <img class="card-img-top img-fluid" src="/assets/img/seller-registration.jpg" alt="Seller Registration">
+              <div class="card-body">
+                <h2 class="text-center">I want to Sell</h2>
+
+                <hr>
+                <p>The following agency types can sell on BidBay:</p>
+                <ul>
+                  <li>Municipalities, Counties, States</li>
+                  <li>Police, Fire, EMS</li>
+                  <li>Utilities and Authorities</li>
+                  <li>Schools, Colleges, Universities</li>
+                  <li>Other related agencies</li>
+                </ul>
+                <p>Not sure if you qualify? <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">Ask
+                    us.</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-primary btn-block btn-lg" href="#">Apply for a Seller Account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=========  NEWS LETTER SECTION  ======== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
+          </div>
+          <div class="content">
+            <h4 class="text-white p-3">
+              Get to Know the Visionaries Behind BidBay: Meet Our Management Team
+            </h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <button type="submit" class="new-home-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+  </main>
+
+  <!--=========  FOOTER SECTION  ======== -->
+  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script defer src="/src/views/common.js"> </script>
+
+  <script defer src="../js/authDecision.js"></script>
+
+</body>
+
+</html>

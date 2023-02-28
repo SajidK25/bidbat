@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Create a new listing on our website and share your product or service with our community. Our user-friendly platform makes it easy to upload photos, write a detailed description, and set your own price. Start selling today!">
+  <link rel="stylesheet" href="/dist/css/create-listing.css">
+
+    <script src="../js/authDecision.js" defer></script>
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <title>Create Listing | BidBay</title>
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+
+  </div>
+  <main>
+    <!--========= Create Listing  SECTION   ======== -->
+    <Section class="Create-listing">
+      <div class="container mt-5">
+        <h2 class="text-center mb-5">Create Listing</h2>
+        <form class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" class="form-control" id="title" required />
+          <label for="description">Description:</label>
+          <textarea class="form-control" id="description"></textarea>
+          <label for="price">Price:</label>
+          <input type="number" class="form-control" id="price" required />
+          <label for="image">Image:</label>
+          <input type="file" class="form-control-file" id="image" required/>
+          <button type="submit" class="btn btn-primary">Create Listing</button>
+        </form>
+      </div>
+    </Section>
+
+    <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
+    <!--=========  NEWS LETTER SECTION  ======== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="" alt="mailbox-img">
+          </div>
+          <div class="content">
+            <h4 class="text-white p-3">
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+            </h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <button type="submit" class="cmn--btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+  </main>
+
+  <!--=========  FOOTER SECTION  ======== -->
+  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/views/common.js" defer> </script>
+</body>
+
+</html>

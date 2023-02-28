@@ -1,0 +1,152 @@
+.started_section {
+  padding: 60px 0;
+
+  .container {
+    max-width: 1140px;
+
+    .row {
+      margin: 0 -15px;
+
+      .col-md-6 {
+        padding: 0 15px;
+
+        .py-7 {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          .div-img {
+            max-width: 100px;
+            margin-bottom: 30px;
+          }
+
+          .heading {
+            h2 {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+
+      // Small screens
+      @media (max-width: 767px) {
+        .col-md-6 {
+          flex-basis: 50%;
+
+          .py-7 {
+            height: auto;
+          }
+
+          .div-img {
+            max-width: 70px;
+          }
+
+          .heading {
+            h2 {
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      // Desktops
+      @media (min-width: 768px) {
+        .col-md-6 {
+          flex-basis: 25%;
+
+          .py-7 {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// /* Styling for Started Section */
+// .started_section {
+// // background-color: #1c1c1c;
+// padding: 60px 0;
+
+// /* Responsive images */
+// img {
+// max-width: 50%;
+// height: auto;
+// border-radius: 5%;
+// }
+
+// /* Responsive layout */
+// @media (max-width: 1124px) {
+// .col-lg-3 {
+// flex: 0 0 33.333%;
+// max-width: 33.333%;
+// }
+// }
+
+// @media (max-width: 900px) {
+// .col-lg-3 {
+// flex: 0 0 50%;
+// max-width: 50%;
+// }
+// }
+
+// @media (max-width: 800px) {
+// .col-lg-3 {
+// flex: 0 0 50%;
+// max-width: 50%;
+// }
+// }
+
+// @media (max-width: 768px) {
+// .col-lg-3 {
+// flex: 0 0 100%;
+// max-width: 100%;
+// border: none;
+// margin-bottom: 30px;
+// }
+// }
+
+// @media (max-width: 600px) {
+// img {
+// max-width: 60%;
+// }
+// }
+
+// @media (max-width: 500px) {
+// img {
+// max-width: 50%;
+// }
+// }
+
+// @media (max-width: 414px) {
+// img {
+// max-width: 40%;
+// }
+// }
+
+// @media (max-width: 390px) {
+// img {
+// max-width: 35%;
+// }
+// }
+
+// @media (max-width: 375px) {
+// img {
+// max-width: 30%;
+// }
+// }
+
+// @media (max-width: 360px) {
+// img {
+// max-width: 25%;
+// }
+// }
+// }

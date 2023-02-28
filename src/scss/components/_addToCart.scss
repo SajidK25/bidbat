@@ -1,0 +1,120 @@
+
+// Variables for common styles
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Styles for product card
+#product-card {
+ margin-top: 15rem;
+  padding: 80px 0;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+    }
+  }
+
+  .btn-danger {
+    background-color: rgb(68, 6, 6);
+    border-color: rgb(68, 6, 6);
+    color: white;
+  }
+
+  .btn-success {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: white;
+    width: 100%;
+  }
+}
+
+// Media queries for different screen sizes
+@media (min-width: 280px) {
+  #product-card {
+    padding: 2rem 0;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .card {
+      .card-title {
+        font-size: 1rem;
+      }
+
+      .card-text {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  #product-card {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (min-width: 375px) {
+  #product-card {
+    padding: 3rem 0;
+  }
+}
+
+@media (min-width: 412px) {
+  #product-card {
+    padding: 3.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #product-card {
+    padding: 4rem 0;
+
+    .card {
+      .card-title {
+        font-size: 1.5rem;
+      }
+
+      .card-text {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  #product-card {
+    padding: 4.5rem 0;
+  }
+}
+
+@media (min-width: 1124px) {
+  #product-card {
+    padding: 5rem 0;
+
+    .card {
+      .card-title {
+        font-size: 1.75rem;
+      }
+
+      .card-text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

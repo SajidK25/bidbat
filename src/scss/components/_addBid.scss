@@ -1,0 +1,60 @@
+.add-bid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .container {
+    padding: 3em 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 992px) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 2em;
+      color: #fff;
+
+      @media (max-width: 992px) {
+        font-size: 1.5em;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 1.25em;
+      }
+    }
+
+    form {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+
+      .form-group {
+        margin-bottom: 1.5em;
+
+        label {
+          font-weight: bold;
+          display: block;
+          margin-bottom: 0.5em;
+          color: #fff;
+        }
+
+        input[type='number'] {
+          padding: 0.5em;
+          width: 100%;
+          border: 1px solid #ccc;
+          margin-bottom: 1em;
+        }
+      }
+
+      .btn-block {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}

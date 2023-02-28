@@ -1,0 +1,78 @@
+.user-profile {
+  .container {
+    
+   
+   
+    padding: 50px;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    text-align: center;
+    color: #f2f2f2;
+    .row {
+      margin-top: 173px;
+       margin-left: -13rem;
+
+      .col-md-3 {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        /* user avatar styling */
+        img {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .col-md-9 {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        h2 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+
+        form {
+          /* form styling */
+          width: 70%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f2f2f2;
+          border-radius: 10px;
+          text-align: left;
+          .form-group {
+            margin-bottom: 20px;
+
+            label {
+              font-weight: bold;
+              color: #000;
+            }
+
+            input[type='text'],
+            input[type='email'] {
+              width: 100%;
+              padding: 10px;
+              font-size: 18px;
+              border-radius: 5px;
+              border: 1px solid #ddd;
+              color: #ccc;
+            }
+          }
+
+          button[type='submit'] {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

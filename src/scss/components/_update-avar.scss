@@ -1,0 +1,151 @@
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.update-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.update-avatar .btn-update {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.update-avatar .btn-updat:hover {
+  background-color: #3e8e41;
+}
+
+.update-avatar .btn-updat:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.8);
+}
+
+.update-avatar .btn-updat:active {
+  transform: translateY(1px);
+}
+
+.update-avatar .container {
+  max-width: 800px;
+  padding: 3em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-avatar .container h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.update-avatar .container form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.update-avatar .container form .form-group {
+  margin-bottom: 1.5em;
+}
+
+.update-avatar .container form .form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.update-avatar .container form .form-group input[type='text'] {
+  padding: 0.5em;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+.update-avatar .container form .btn-block {
+  margin-top: 1.5em;
+}
+
+.update-avatar img {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1124px) {
+  .update-avatar .container {
+    padding: 2.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .update-avatar .container {
+    padding: 2em;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .update-avatar .container {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 412px) {
+  .update-avatar .container {
+    max-width: 80%;
+    padding: 1.2em;
+  }
+
+  .update-avatar .container h1 {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .update-avatar img {
+    max-width: 100px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .update-avatar .container {
+    padding: 1em;
+  }
+
+  .update-avatar .container h1 {
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 280px) {
+  .update-avatar .container {
+    max-width: 90%;
+    padding: 0.8em;
+  }
+
+  .update-avatar .container h1 {
+    font-size: 1.1em;
+  }
+
+  .update-avatar .container form .form-group input[type='text'] {
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .update-avatar img {
+    max-width: 80px;
+    margin-top: 5px;
+  }
+}

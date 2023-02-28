@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/css/myListings.css">
+  <meta name="description"
+    content="View my active listings on BidBay, the premier online auction platform. Browse a wide variety of products and place your bids today!">
+
+  <script src="/src/scss/js/api/auth/registerUser.js" defer "></script>
+
+
+
+  <!--font awesome link-->
+  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <title>My Listings | BidBay </title>
+  <script src="../js/authDecision.js" defer></script>
+
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+
+  </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
+  <main>
+    <div id="listings-container"></div>
+    <div id="bid-list-container"></div>
+
+    <script id="listing-template" type="text/x-handlebars-template">
+        {{#each listings}}
+          <li>
+            <a href="#" class="listing-link" data-id="{{id}}" data-description="{{description}}">{{title}}</a>
+          </li>
+        {{/each}}
+      </script>
+
+    <script id="bid-template" type="text/x-handlebars-template">
+        {{#each bids}}
+          <li data-id="{{id}}" data-listing-id="{{listingId}}">
+            {{bidder}} - ${{amount}} - {{status}}
+            {{#if (eq status 'pending')}}
+              <button class="accept-button">Accept</button>
+              <button class="reject-button">Reject</button>
+            {{/if}}
+          </li>
+        {{/each}}
+      </script>
+
+  </main>
+
+
+  <!--=========  NEWS LETTER SECTION  ======== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-wrapper">
+        <div class="icon-div">
+          <img src="/assets/img/icons867.png" alt="mailbox-img">
+        </div>
+        <div class="content">
+          <h4 class="text-white p-3">
+            Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+          </h4>
+          <form action="#" class="newsletter-form">
+            <input type="email" placeholder="Enter Your Email" class="form-input">
+            <button type="submit" class="cmn--btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+
+  <!-- - THIS IS INSIDE THE COMMONS -------- -->
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+
+  <script defer src="/src/views/app.js"></script>
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="/src/views/common.js"></script>
+</body>
+
+</html>

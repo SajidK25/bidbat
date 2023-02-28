@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="View and manage your bids on BidBay, the premier online auction platform. Stay up to date on the status of your bids and never miss out on the items you want. Sign up now to start bidding!">
+
+  <link rel="stylesheet" href="/dist/css/dashboardP.css">
+
+  <!--font awesome link-->
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>BidBay | Dashboard</title>
+
+
+
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
+  </div>
+
+  <main>
+
+    <section class="pathway-section section dashboard-img section-bg">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="pathway-content">
+              <ul class="bread-link">
+                <li>
+                  <a href="index.html" class="text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <i class="fas fa-angles-right text-white"></i>
+                </li>
+                <li>
+                  <a href="#" class="text-white">My Account</a>
+                </li>
+                <li>
+                  <i class="fas fa-angles-right text-white"></i>
+                </li>
+                <li class="text-white">
+                  Personal Profile
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section class="dashboard">
+      <div class="container">
+        <div class="dashboard-wrapper">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="dashboard-widget">
+                <div class="user-box">
+                  <div class="thumb">
+                    <img src="/assets/img/Winners5.png" alt="user-imc" width="100" height="60">
+                  </div>
+                  <div class="content">
+                    <h5>
+                      <a href="#" class="text-white">
+                        Charlie Smith
+                      </a>
+                    </h5>
+                    <span class="text-white">
+                      Charlie Smith@gmail.com
+                    </span>
+                    <a href="#" class="cmn--border">
+                      Logout
+                    </a>
+                  </div>
+                </div>
+                <ul class="dashboard-menu">
+                  <li class="active">
+                    <a href="/src/public/dashboard.html">
+                      <img src="/assets/img/seo.png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/src/public/profile.html">
+                      <img src="/assets/img/user.png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>Personal Profile </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/src/public/bid_listing.html">
+                      <img src="/assets/img/auction(1).png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>My Bids</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="winning.html">
+                      <img src="/assets/img/you-win.png" alt="click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>Winning Bids</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="alert.html">
+                      <img src="/assets/img/bell.png" alt=" click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>My Alerts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="favorites.html">
+                      <img src="/assets/img/heart.png" alt=" click-img" style="max-width: 50px; max-height: 50px;">
+                      <span>My Favorites</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="dashboard-right-wrapper">
+
+                <div class="counter-box">
+                  <h5 class="title text-white">
+                    My Activity
+                  </h5>
+                  <div class="row g-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                      <div class="activity-items odometer-item">
+                        <div class="thumb">
+                          <img src="/assets/img/luxury.png" alt="count-img" style="max-width: 50px; max-height: 50px;">
+                        </div>
+                        <div class="content">
+                          <h3 class="odometer odometer-auto-theme" data-odometer-final="97">
+                            <div class="odometer-inside"><span class="odometer-digit text-white"><span
+                                  class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">9</span></span></span></span></span><span
+                                class="odometer-digit"><span class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">7</span></span></span></span></span></div>
+                          </h3>
+                          <h5 class="text-white">
+                            Active Bids
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                      <div class="activity-items odometer-item">
+                        <div class="thumb">
+                          <img src="/assets/img/cup.png" alt="count-img" style="max-width: 50px; max-height: 50px;">
+                        </div>
+                        <div class="content">
+                          <h3 class="odometer odometer-auto-theme" data-odometer-final="17">
+                            <div class="odometer-inside"><span class="odometer-digit"><span
+                                  class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">1</span></span></span></span></span><span
+                                class="odometer-digit"><span class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">7</span></span></span></span></span></div>
+                          </h3>
+                          <h5 class="text-white">
+                            Winner
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                      <div class="activity-items odometer-item">
+                        <div class="thumb">
+                          <img src="/assets/img/favorites.png" alt="count-img"
+                            style="max-width: 50px; max-height: 50px;">
+                        </div>
+                        <div class="content">
+                          <h3 class="odometer odometer-auto-theme" data-odometer-final="212">
+                            <div class="odometer-inside"><span class="odometer-digit"><span
+                                  class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">2</span></span></span></span></span><span
+                                class="odometer-digit"><span class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">1</span></span></span></span></span><span
+                                class="odometer-digit"><span class="odometer-digit-spacer text-white">8</span><span
+                                  class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                      class="odometer-ribbon-inner"><span
+                                        class="odometer-value text-white">2</span></span></span></span></span></div>
+                          </h3>
+                          <h5 class="text-white">
+                            Favorites
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="activity-table">
+                  <table>
+                    <tbody>
+                      <tr class="border-none">
+                        <th class="text-white">Item</th>
+                        <th class="text-white">Bid Price</th>
+                        <th class="text-white">Current bid</th>
+                        <th class="text-white">Bids</th>
+                        <th class="text-white">Bidders</th>
+                        <th class="text-white">Expires</th>
+                      </tr>
+                      <tr class="tb1">
+                        <td class="tdfirst">
+                          <div class="icon">
+                            <img src="/assets/img/macbook.png" alt="t-img" style="max-width: 50px; max-height: 50px;">
+                          </div>
+                        </td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">2</td>
+                        <td class="text-white">2</td>
+                        <td class="text-white">6/2/2022</td>
+                      </tr>
+                      <tr class="tb2">
+                        <td class="tdfirst">
+                          <div class="icon">
+                            <img src="/assets/img/macbook.png" alt="t-img" style="max-width: 50px; max-height: 50px;">
+                          </div>
+                        </td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">0</td>
+                        <td class="text-white">No bidders</td>
+                        <td class="text-white">6/2/2022</td>
+                      </tr>
+                      <tr class="tb1">
+                        <td class="tdfirst">
+                          <div class="icon">
+                            <img src="/assets/img/macbook.png" alt="t-img" style="max-width: 50px; max-height: 50px;">
+                          </div>
+                        </td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">1</td>
+                        <td class="text-white">1</td>
+                        <td class="text-white">6/2/2022</td>
+                      </tr>
+                      <tr class="tb2">
+                        <td class="tdfirst">
+                          <div class="icon">
+                            <img src="/assets/img/macbook.png" alt="t-img" style="max-width: 50px; max-height: 50px;">
+                          </div>
+                        </td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">0</td>
+                        <td class="text-white">No bidders</td>
+                        <td class="text-white">6/2/2022</td>
+                      </tr>
+                      <tr class="tb1">
+                        <td class="tdfirst">
+                          <div class="icon">
+                            <img src="/assets/img/macbook.png" alt="t-img" style="max-width: 50px; max-height: 50px;">
+                          </div>
+                        </td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">$2,895.00</td>
+                        <td class="text-white">0</td>
+                        <td class="text-white">No bidders</td>
+                        <td class="text-white">6/2/2022</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!----- NEWS LETTER SECTION ------>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
+          </div>
+          <div class="content">
+            <h4 class="text-white p-3">
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+            </h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <button type="submit" class="new-home-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!--=========  FOOTER SECTION  ======== -->
+
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script defer src="../js/authDecision.js"></script>
+
+  <script defer src="../js/logout.js"></script>
+  <script defer src="../views/common.js"></script>
+  <script defer src="../js/my-script.js"></script>
+</body>
+
+</html>

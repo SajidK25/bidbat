@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Log in to your account on BidBay and start bidding on your favorite products. Securely access your account and manage your bids.">
+
+  <link rel="stylesheet" href="/dist/css/login.css">
+
+
+
+
+  <title>User Login Form | BidBay</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <h1 class="text-center mb-5 text-white fw-bold">Let the bidding begin! Login to BidBay now.</h1>
+        <div class="col-md-6 mx-auto">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <!-- <input type="email" class="form-control" id="email" name="email" required> -->
+              <input type="email" name="email" pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email"
+                class="form-control" title="Must be a valid email address" placeholder="name@stud.noroff.no" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <!-- <input type="password" class="form-control" id="password" name="password" required> -->
+              <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" class="form-control"
+                placeholder="password" required />
+            </div>
+
+            <p id="success-message" class="text-success"></p>
+            <div id="error-message" class="text-danger"></div>
+
+            <button type="button" id="submit-btn" onclick="login()" class="btn  btn-login">Login</button>
+
+          </form>
+
+          <div class="load-wrapper" id="loading-div">
+            <div class="load-10">
+              <p>Loading 10</p>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script defer src="../utils/auth.js"></script>
+
+</body>
+
+</html>

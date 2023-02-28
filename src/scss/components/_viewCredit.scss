@@ -1,0 +1,117 @@
+.view-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .container {
+    padding: 3em 0;
+
+    @media (max-width: 992px) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 2em;
+      color: #fff;
+
+      @media (max-width: 992px) {
+        font-size: 1.5em;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 1.25em;
+      }
+    }
+
+    .card {
+      margin-top: 2em;
+      text-align: center;
+
+      .card-body {
+        h5 {
+          font-size: 1.25em;
+          font-weight: bold;
+          margin-bottom: 1em;
+        }
+
+        span {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+// for 375px
+@media only screen and (max-width: 375px) {
+  .view-credit {
+    padding: 0 10px;
+  }
+  .fs-1 {
+    font-size: 24px;
+  }
+}
+
+// for 414px
+@media only screen and (max-width: 414px) {
+  .fs-1 {
+    font-size: 26px;
+  }
+}
+
+// for 412px
+@media only screen and (max-width: 412px) {
+  .view-credit {
+    padding: 0 10px;
+  }
+  .fs-1 {
+    font-size: 26px;
+  }
+}
+
+// for 360px
+@media only screen and (max-width: 360px) {
+  .view-credit {
+    padding: 0 10px;
+  }
+  .fs-1 {
+    font-size: 22px;
+  }
+}
+
+// for 280px
+@media only screen and (max-width: 280px) {
+  .view-credit {
+    padding: 0 5px;
+  }
+  .fs-1 {
+    font-size: 20px;
+  }
+}
+
+// for 800px
+@media only screen and (max-width: 800px) {
+  .view-credit {
+    padding: 0 20px;
+  }
+  .fs-1 {
+    font-size: 36px;
+  }
+}
+
+// for 768px
+@media only screen and (max-width: 768px) {
+  .fs-1 {
+    font-size: 32px;
+  }
+}
+
+// for 1124px
+@media only screen and (max-width: 1124px) {
+  .container {
+    max-width: 960px;
+  }
+}
